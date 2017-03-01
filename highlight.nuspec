@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>highlight</id>
-    <version>3.33</version>
+    <version>3.34</version>
     <title>Highlight Code Converter</title>
     <authors>André Simon</authors>
     <owners>Aaron Sherber</owners>
@@ -11,6 +11,9 @@
     <licenseUrl>https://www.gnu.org/copyleft/gpl.html</licenseUrl>
     <description>Highlight converts sourcecode to HTML, XHTML, RTF, LaTeX, TeX, SVG, BBCode and terminal escape sequences with coloured syntax highlighting. Language definitions and colour themes are customizable.</description>
     <summary>GUI and CLI syntax highlighter for many languages</summary>
+    <releaseNotes>* fixed segfault with --skip applied on a single file input list (thanks to Jens Schleusener)
+* added support for Python 3.6 syntax
+* added Github and Sourceforge themes</releaseNotes>
     <tags>syntax highlight code programming utilities</tags>
     <iconUrl>http://www.andre-simon.de/img/hl_icon2.png</iconUrl>    
   </metadata>
