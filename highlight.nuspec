@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>highlight</id>
-    <version>3.34</version>
+    <version>3.35</version>
     <title>Highlight Code Converter</title>
     <authors>André Simon</authors>
     <owners>Aaron Sherber</owners>
@@ -11,9 +11,16 @@
     <licenseUrl>https://www.gnu.org/copyleft/gpl.html</licenseUrl>
     <description>Highlight converts sourcecode to HTML, XHTML, RTF, LaTeX, TeX, SVG, BBCode and terminal escape sequences with coloured syntax highlighting. Language definitions and colour themes are customizable.</description>
     <summary>GUI and CLI syntax highlighter for many languages</summary>
-    <releaseNotes>* fixed segfault with --skip applied on a single file input list (thanks to Jens Schleusener)
-* added support for Python 3.6 syntax
-* added Github and Sourceforge themes</releaseNotes>
+    <releaseNotes>* fixed code folding plugin to support Ruby conditional modifiers
+* fixed JSON definition (thanks to Timothee Cour)
+* fixed output of unknown syntax warning with applied force switch (thanks to Andy)
+* added state trace parameter to Decorate plug-in function 
+* added GDScript definition and edit-godot theme (thanks to Tristano Ajmone)
+* updated SWIG code samples
+* updated Artistic Style lib (SVN Rev. 553)
+* revised docs
+* CLI: fixed creation of hidden files if output filename is prepended by its input path
+* CLI: added switch --stdout (https://sourceforge.net/p/syntaxhighlight/bugs/14/)</releaseNotes>
     <tags>syntax highlight code programming utilities</tags>
     <iconUrl>http://www.andre-simon.de/img/hl_icon2.png</iconUrl>    
   </metadata>
