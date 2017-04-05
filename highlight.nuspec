@@ -20,7 +20,7 @@
 * added outhtml_ie7_webctrl plug-in (suggested by Tristano Ajmone)
 * GUI: file extensions can be configured for multiple languages, triggers syntax selection prompt
 * GUI: added Italian translation (thanks to Tristano Ajmone)</releaseNotes>
-    <tags>syntax highlight code programming utilities</tags>
+    <tags>syntax highlight code programming utilities admin</tags>
     <iconUrl>http://www.andre-simon.de/img/hl_icon2.png</iconUrl>    
   </metadata>
   <files>
