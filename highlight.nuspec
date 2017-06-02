@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>highlight</id>
-    <version>3.36</version>
+    <version>3.37</version>
     <title>Highlight Code Converter</title>
     <authors>André Simon</authors>
     <owners>Aaron Sherber</owners>
@@ -11,15 +11,15 @@
     <licenseUrl>https://www.gnu.org/copyleft/gpl.html</licenseUrl>
     <description>Highlight converts sourcecode to HTML, XHTML, RTF, LaTeX, TeX, SVG, BBCode and terminal escape sequences with coloured syntax highlighting. Language definitions and colour themes are customizable.</description>
     <summary>GUI and CLI syntax highlighter for many languages</summary>
-    <releaseNotes>* no more 32-bit build
-* fixed code folding plugin to support more Ruby conditional modifiers (thanks to Jens Schleusener)
-* fixed Perl quoted string highlighting (thanks to Jens Schleusener)
-* added new GeneratorOverride syntax definition parameter
-* added Filenames parameter in filetypes.conf to assign input filenames to syntax types (suggested by Andy)
-* added FASM definition and edit-fasm theme (thanks to Tristano Ajmone)
-* added outhtml_ie7_webctrl plug-in (suggested by Tristano Ajmone)
-* GUI: file extensions can be configured for multiple languages, triggers syntax selection prompt
-* GUI: added Italian translation (thanks to Tristano Ajmone)</releaseNotes>
+    <releaseNotes>* fixed Perl string highlighting issue
+* fixed highlighting if a line continues after the nested code delimiter
+* updated astyle code to release 3.0
+* added examples/pandoc (thanks to Tristano Ajmone)
+* added syntax mapping for markdown (https://github.com/andre-simon/highlight/issues/11)
+* added syntax mapping for clj (https://github.com/andre-simon/highlight/issues/15)
+* improved Java definition (https://github.com/andre-simon/highlight/issues/13)
+* added theme to JSON converter in  examples/json (https://github.com/andre-simon/highlight/issues/8)
+* CLI: added support for environment variable HIGHLIGHT_OPTIONS (https://github.com/andre-simon/highlight/issues/17)</releaseNotes>
     <tags>syntax highlight code programming utilities admin</tags>
     <iconUrl>http://www.andre-simon.de/img/hl_icon2.png</iconUrl>    
   </metadata>
