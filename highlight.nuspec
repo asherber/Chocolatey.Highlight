@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>highlight</id>
-    <version>3.39</version>
+    <version>3.40</version>
     <title>Highlight Code Converter</title>
     <authors>André Simon</authors>
     <owners>Aaron Sherber</owners>
@@ -11,9 +11,14 @@
     <licenseUrl>https://www.gnu.org/copyleft/gpl.html</licenseUrl>
     <description>Highlight converts sourcecode to HTML, XHTML, RTF, LaTeX, TeX, SVG, BBCode and terminal escape sequences with coloured syntax highlighting. Language definitions and colour themes are customizable.</description>
     <summary>GUI and CLI syntax highlighter for many languages</summary>
-    <releaseNotes>* added syntax for Docker and Elixir
-* improved  HTML, Julia, Kotlin and Smalltalk syntax definitions
-* GUI: added "Paste, Convert and Copy" button</releaseNotes>
+    <releaseNotes>* fixed Ruby string parsing (thanks to Jens Schleusener)
+* fixed segfault on sparc64 (patch by James Clarke)
+* fixed PureBasic definition (https://github.com/andre-simon/highlight/issues/25)
+* added CMake definition (https://github.com/andre-simon/highlight/issues/20)
+* added email definition (https://github.com/andre-simon/highlight/issues/21)
+* linked scm suffix to lisp definition (https://github.com/andre-simon/highlight/issues/22)
+* W32 CLI: support HIGHLIGHT_DATADIR and * * data* dir options (https://github.com/andre-simon/highlight/issues/24)
+* revised documentation</releaseNotes>
     <tags>syntax highlight code programming utilities admin</tags>
     <iconUrl>http://www.andre-simon.de/img/hl_icon2.png</iconUrl>    
   </metadata>
