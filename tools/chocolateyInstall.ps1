@@ -2,11 +2,11 @@
    packageName = 'highlight'
    fileType = 'exe'
    silentArgs = '/verysilent'
-   url64bit = 'http://www.andre-simon.de/zip/highlight-setup-3.41-x64.exe'
-   checksum64 = 'a7b246faf70b18cd0380a6a4230d30eec69e1e5ba3555e5390a60066b84bd190'
+   url64bit = 'http://www.andre-simon.de/zip/highlight-setup-3.42-x64.exe'
+   checksum64 = '9c8ff52991b081ecbccd1b7bb86a62e0cbf75ca79765483779a347d2875f2253'
    checksumType64 = 'sha256'
-   url = 'http://www.andre-simon.de/zip/highlight-setup-3.41.exe'
-   checksum = 'dc6f4c476fb917e5949f63894594f60fc72b2992c4f9e15f6af51b2cf52117bb'
+   url = 'http://www.andre-simon.de/zip/highlight-setup-3.42.exe'
+   checksum = '61a64943b86a8428ce6a8e2a325c6c83efe7172ee6205454a50b83a3514d5853'
    checksumType = 'sha256'
 }
 
