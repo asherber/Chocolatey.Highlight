@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>highlight</id>
-    <version>3.43</version>
+    <version>3.44</version>
     <title>Highlight Code Converter</title>
     <authors>André Simon</authors>
     <owners>Aaron Sherber</owners>
@@ -11,16 +11,17 @@
     <licenseUrl>https://www.gnu.org/copyleft/gpl.html</licenseUrl>
     <description>Highlight converts sourcecode to HTML, XHTML, RTF, LaTeX, TeX, SVG, BBCode and terminal escape sequences with coloured syntax highlighting. Language definitions and colour themes are customizable.</description>
     <summary>GUI and CLI syntax highlighter for many languages</summary>
-    <releaseNotes>* updated astyle code to release 3.1 (Rev. 655)
-* added webkit reformatting style
-* improved several language definitions
-* fixed Matlab string recognition (https://github.com/andre-simon/highlight/issues/61)
-* fixed Autohotkey escape sequence recognition (thanks to Klaus Daube)
-* added excel.lang (https://github.com/andre-simon/highlight/pull/60)
-* improved Qt pro file (https://github.com/andre-simon/highlight/pull/59)
-* CLI: added --reformat-option (https://github.com/andre-simon/highlight/issues/62)
-* CLI: added --line-range (https://github.com/andre-simon/highlight/issues/64)
-* GUI: added Bulgarian translation  (thanks to Georgi Sotirov)</releaseNotes>
+    <releaseNotes>* fixed gcc 8 compilation warnings
+* fixed Ruby string interpolation (https://github.com/andre-simon/highlight/issues/70)
+* added support for ALAN IF (thanks to Tristano Ajmone)
+* added 107 Base16 themes [https://github.com/chriskempson/base16] (thanks to Tristano Ajmone)
+* updated Rust and Java reserved words lists
+* revised documentation
+* moved extras/css-themes into extras/themes-resources
+* added extras/themes-resources/base16 (thanks to Tristano Ajmone)
+* GUI: added Base16 theme selection checkbox
+* CLI: added --base16 option to enable the new themes
+* CLI: accept - as argument to read from stdin (https://github.com/andre-simon/highlight/issues/73)</releaseNotes>
     <tags>syntax highlight code programming utilities admin</tags>
     <iconUrl>http://www.andre-simon.de/img/hl_icon2.png</iconUrl>    
   </metadata>
