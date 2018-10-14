@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>highlight</id>
-    <version>3.44</version>
+    <version>3.47</version>
     <title>Highlight Code Converter</title>
     <authors>André Simon</authors>
     <owners>Aaron Sherber</owners>
@@ -11,17 +11,27 @@
     <licenseUrl>https://www.gnu.org/copyleft/gpl.html</licenseUrl>
     <description>Highlight converts sourcecode to HTML, XHTML, RTF, LaTeX, TeX, SVG, BBCode and terminal escape sequences with coloured syntax highlighting. Language definitions and colour themes are customizable.</description>
     <summary>GUI and CLI syntax highlighter for many languages</summary>
-    <releaseNotes>* fixed gcc 8 compilation warnings
-* fixed Ruby string interpolation (https://github.com/andre-simon/highlight/issues/70)
-* added support for ALAN IF (thanks to Tristano Ajmone)
-* added 107 Base16 themes [https://github.com/chriskempson/base16] (thanks to Tristano Ajmone)
-* updated Rust and Java reserved words lists
-* revised documentation
-* moved extras/css-themes into extras/themes-resources
-* added extras/themes-resources/base16 (thanks to Tristano Ajmone)
-* GUI: added Base16 theme selection checkbox
-* CLI: added --base16 option to enable the new themes
-* CLI: accept - as argument to read from stdin (https://github.com/andre-simon/highlight/issues/73)</releaseNotes>
+    <releaseNotes>* fixed xterm256 and truecolor whitespace output #2 (https://gitlab.com/saalen/highlight/issues/90)
+* fixed LaTeX, TeX, SVG and ODT whitespace output (regression of 3.45)
+* added darkplus theme (https://gitlab.com/saalen/highlight/merge_requests/84)
+* converted ChangeLog to AsciiDoc
+* allowed state test indicators to match both whitespace (ws) and the enclosing state (others)
+* CLI: default output changed to xterm256 or truecolor if run in a terminal with color support and 
+        only a single file is outputted
+* GUI: added checkbox in the clipboard tab to output selected lines only
+* fixed xterm256 and truecolor whitespace output (https://gitlab.com/saalen/highlight/issues/90)
+* converted manuals to AsciiDoc (thanks to Tristano Ajmone)
+* added DocumentHeader and DocumentFooter plug-in hooks
+* added RemoveKeyword Lua function for syntax definitions
+* added syntax test indicators (see README_TESTCASES)
+* added support for ISO and R10 variants of Modula2 (thanks to Benjamin Kowarsch)
+* fixed R identifiers (https://gitlab.com/saalen/highlight/merge_requests/77)
+* fixed ALAN IF identifiers (see https://gitlab.com/saalen/highlight/merge_requests/79)
+* fixed issue with Bash string interpolation
+* fixed some bugs found by coverity tool (https://gitlab.com/saalen/highlight/issues/82)
+* added Swift keywords and types
+* added filetypes.conf.5 man page (https://gitlab.com/saalen/highlight/issues/83)
+* added Gradle extension mapping (https://gitlab.com/saalen/highlight/merge_requests/80)</releaseNotes>
     <tags>syntax highlight code programming utilities admin</tags>
     <iconUrl>http://www.andre-simon.de/img/hl_icon2.png</iconUrl>    
   </metadata>
