@@ -16,7 +16,9 @@
 * CLI: allowed file paths as --theme and --syntax argument (https://gitlab.com/saalen/highlight/issues/145)
 * GUI: removed deprecated QTime API call</releaseNotes>
     <tags>syntax highlight code programming utilities admin</tags>
-    <iconUrl>http://www.andre-simon.de/img/hl_icon2.png</iconUrl>    
+    <iconUrl>http://www.andre-simon.de/img/hl_icon2.png</iconUrl>
+    <projectSourceUrl>https://gitlab.com/saalen/highlight</projectSourceUrl>
+    <docsUrl>http://www.andre-simon.de/doku/highlight/en/highlight.php</docsUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
