@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>highlight</id>
-    <version>3.47</version>
+    <version>3.55</version>
     <title>Highlight Code Converter</title>
     <authors>André Simon</authors>
     <owners>Aaron Sherber</owners>
@@ -11,27 +11,10 @@
     <licenseUrl>https://www.gnu.org/copyleft/gpl.html</licenseUrl>
     <description>Highlight converts sourcecode to HTML, XHTML, RTF, LaTeX, TeX, SVG, BBCode and terminal escape sequences with coloured syntax highlighting. Language definitions and colour themes are customizable.</description>
     <summary>GUI and CLI syntax highlighter for many languages</summary>
-    <releaseNotes>* fixed xterm256 and truecolor whitespace output #2 (https://gitlab.com/saalen/highlight/issues/90)
-* fixed LaTeX, TeX, SVG and ODT whitespace output (regression of 3.45)
-* added darkplus theme (https://gitlab.com/saalen/highlight/merge_requests/84)
-* converted ChangeLog to AsciiDoc
-* allowed state test indicators to match both whitespace (ws) and the enclosing state (others)
-* CLI: default output changed to xterm256 or truecolor if run in a terminal with color support and 
-        only a single file is outputted
-* GUI: added checkbox in the clipboard tab to output selected lines only
-* fixed xterm256 and truecolor whitespace output (https://gitlab.com/saalen/highlight/issues/90)
-* converted manuals to AsciiDoc (thanks to Tristano Ajmone)
-* added DocumentHeader and DocumentFooter plug-in hooks
-* added RemoveKeyword Lua function for syntax definitions
-* added syntax test indicators (see README_TESTCASES)
-* added support for ISO and R10 variants of Modula2 (thanks to Benjamin Kowarsch)
-* fixed R identifiers (https://gitlab.com/saalen/highlight/merge_requests/77)
-* fixed ALAN IF identifiers (see https://gitlab.com/saalen/highlight/merge_requests/79)
-* fixed issue with Bash string interpolation
-* fixed some bugs found by coverity tool (https://gitlab.com/saalen/highlight/issues/82)
-* added Swift keywords and types
-* added filetypes.conf.5 man page (https://gitlab.com/saalen/highlight/issues/83)
-* added Gradle extension mapping (https://gitlab.com/saalen/highlight/merge_requests/80)</releaseNotes>
+    <releaseNotes>* improved handling of empty files in xterm256 and truecolor output (https://gitlab.com/saalen/highlight/issues/147)
+* added EncodingHint attributes to filetypes.conf and language definitions (https://gitlab.com/saalen/highlight/issues/141)
+* CLI: allowed file paths as --theme and --syntax argument (https://gitlab.com/saalen/highlight/issues/145)
+* GUI: removed deprecated QTime API call</releaseNotes>
     <tags>syntax highlight code programming utilities admin</tags>
     <iconUrl>http://www.andre-simon.de/img/hl_icon2.png</iconUrl>    
   </metadata>
