@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>highlight</id>
-    <version>3.55</version>
+    <version>4.0</version>
     <title>Highlight Code Converter</title>
     <authors>André Simon</authors>
     <owners>Aaron Sherber</owners>
@@ -11,10 +11,30 @@
     <licenseUrl>https://www.gnu.org/copyleft/gpl.html</licenseUrl>
     <description>Highlight converts sourcecode to HTML, XHTML, RTF, LaTeX, TeX, SVG, BBCode and terminal escape sequences with coloured syntax highlighting. Language definitions and colour themes are customizable.</description>
     <summary>GUI and CLI syntax highlighter for many languages</summary>
-    <releaseNotes>* improved handling of empty files in xterm256 and truecolor output (https://gitlab.com/saalen/highlight/issues/147)
-* added EncodingHint attributes to filetypes.conf and language definitions (https://gitlab.com/saalen/highlight/issues/141)
-* CLI: allowed file paths as --theme and --syntax argument (https://gitlab.com/saalen/highlight/issues/145)
-* GUI: removed deprecated QTime API call</releaseNotes>
+    <releaseNotes>* added support for the language server protocol
+* added new configuration file lsp.conf
+* CLI: added `ls-profile`, `--ls-workspace`,`--ls-hover`
+* CLI: deprecated `--start-nested`, `--reformat=user`, `--reformat-option`, `--base16`, `--delim-cr`, `--plug-in-read`
+* GUI: added LSP configuration tab
+* improved LSP message handling
+* added delay LSP parameter
+* added LSP semantic token styles to base16 themes
+* renamed `str` style name to `sng`
+* CLI: enabled `--ls-semantic` option
+* GUI: enabled semantic checkbox and a server capability test
+* added Custom theme attribute
+* enabled inline stylesheets with `--ls-hover`
+* added Error and Hover theme properties
+* enabled syntax error highlighting with `ls-semantic`
+* added two more keyword styles for default themes
+* added Custom theme attributes for Plain TeX, LaTeX, SVG and Pango
+* enabled syntax message output with `--ls-syntax-error`
+* GUI: enabled syntax error checkbox
+* revised color themes
+* added user-select default property to HTML line number style
+* removed `extras/web_plugins`
+* renamed `std` style name to `def`
+* version and README updates</releaseNotes>
     <tags>syntax highlight code programming utilities admin</tags>
     <iconUrl>http://www.andre-simon.de/img/hl_icon2.png</iconUrl>
     <projectSourceUrl>https://gitlab.com/saalen/highlight</projectSourceUrl>
